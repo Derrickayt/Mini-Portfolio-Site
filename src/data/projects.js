@@ -1,5 +1,53 @@
 const projects = [
   {
+    id: "10",
+    title: "DataBridgeGH",
+    category: "Full-Stack",
+    shortDescription: "A data bundle reselling platform for MTN, Telecel, and AT in Ghana.",
+    fullDescription:
+      "A production Next.js 16 app for buying mobile data bundles in Ghana, as a guest or with an account. Customers top up a wallet with Mobile Money (Paystack, with swappable fallback providers) and buy bundles that are delivered through the DataMart supplier API. Money is tracked as integer pesewas in an append-only ledger with atomic Firestore transactions, failed deliveries are auto-refunded, and webhooks plus a reconcile cron settle pending orders. Includes cookie-session auth and an admin panel for pricing and profit margins.",
+    techStack: ["Next.js", "React", "Tailwind CSS", "Firebase Firestore", "Paystack", "JWT (jose)"],
+    liveUrl: "",
+    repoUrl: "",
+    image: "/project-screenshots/databridgegh.png",
+  },
+  {
+    id: "11",
+    title: "BusPass",
+    category: "Full-Stack",
+    shortDescription: "Bus transport management with QR bus cards and seat booking.",
+    fullDescription:
+      "A bus transport management system for a Ghanaian transport company with three roles. Passengers register, get a QR bus card, and book seats by route, date, trip, and pickup point. Admins manage users, cards, routes (with a Leaflet map picker), buses, schedules, and bookings, plus reports with CSV export. Drivers get a high-contrast dashboard that scans passenger QR cards to record boarding in real time. Cloud Functions keep daily stats in sync, close out no-shows, and send departure reminders.",
+    techStack: ["React", "Vite", "React Router", "Tailwind CSS", "Firebase", "Cloud Functions", "Leaflet", "QR codes"],
+    liveUrl: "",
+    repoUrl: "https://github.com/Derrickayt/BusPass",
+    image: "/project-screenshots/buspass.png",
+  },
+  {
+    id: "12",
+    title: "Aytflix — Movie Trailers",
+    category: "Entertainment",
+    shortDescription: "A movie discovery app with trailers, genres, search, and a watchlist.",
+    fullDescription:
+      "A streaming-style movie browser powered by the TMDB API. It features a hero banner of trending titles, scrollable movie rows, genre pages, debounced search, detailed movie pages, and in-app YouTube trailers in a modal. A watchlist is saved to localStorage, and custom useFetch, useDebounce, and useWatchlist hooks keep the data logic tidy, with loading skeletons and error states throughout.",
+    techStack: ["React", "Vite", "React Router", "Tailwind CSS", "lucide-react", "TMDB API"],
+    liveUrl: "",
+    repoUrl: "https://github.com/Derrickayt/movie-thrailers",
+    image: "/project-screenshots/movie-thrailers.png",
+  },
+  {
+    id: "13",
+    title: "FitGear Market",
+    category: "E-commerce",
+    shortDescription: "A fitness equipment marketplace with a persistent cart.",
+    fullDescription:
+      "A small marketplace for fitness equipment: browse and search the catalog, sort products, view details, add items to a cart, and check out. Cart state is managed with Context API and useReducer behind a custom useCart hook, and persisted to localStorage so it survives page reloads.",
+    techStack: ["React", "Vite", "React Router", "Tailwind CSS", "lucide-react", "Context API", "useReducer"],
+    liveUrl: "",
+    repoUrl: "https://github.com/Derrickayt/Mini-Marketplace-App",
+    image: "/project-screenshots/mini-marketplace.png",
+  },
+  {
     id: "1",
     title: "Weather Snapshot",
     category: "Weather App",

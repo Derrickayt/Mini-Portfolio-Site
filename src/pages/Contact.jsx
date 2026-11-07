@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CheckCircle2 } from "lucide-react";
+import contactImage from "../assets/derrick-contact.jpg";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -62,6 +63,11 @@ function Contact() {
 
   return (
     <section className="max-w-md mx-auto px-4 py-16">
+      <img
+        src={contactImage}
+        alt="Derrick smiling"
+        className="w-24 h-24 rounded-full object-cover ring-4 ring-blue-100 mb-6"
+      />
       <h1 className="text-3xl font-bold text-gray-900">Contact</h1>
       <p className="mt-2 text-gray-600">
         Have a project in mind or just want to say hi? Send a message below.

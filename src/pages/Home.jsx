@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import projects from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
-import heroImage from "../assets/hero.png";
+import heroImage from "../assets/derrick-hero.jpg";
 
 function Home() {
   const featured = projects.slice(0, 3);
@@ -39,7 +39,7 @@ function Home() {
           <img
             src={heroImage}
             alt="Portrait of Derrick"
-            className="w-56 h-56 sm:w-72 sm:h-72 rounded-2xl object-cover shadow-lg shadow-gray-300/50 ring-1 ring-gray-200"
+            className="w-56 h-72 sm:w-72 sm:h-96 rounded-2xl object-cover object-top shadow-lg shadow-gray-300/50 ring-1 ring-gray-200"
           />
         </div>
       </section>
